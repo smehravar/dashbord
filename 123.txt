@@ -1,0 +1,38 @@
+from IPython.core.display import display, HTML  
+
+# کد HTML برای نمایش گزارش Power BI  
+html_code = """  
+<!DOCTYPE html>  
+<html lang="fa">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>گزارش Power BI</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh;  
+            background-color: #f0f0f0;  
+        }  
+        iframe {  
+            border: none;  
+            width: 100%;  
+            max-width: 1140px; /* تنظیم عرض حداکثر */  
+            height: 541.25px; /* ارتفاع مشخص */  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h1>گزارش Power BI</h1>  
+    <iframe title="AP 14040116" src="https://app.powerbi.com/reportEmbed?reportId=1a4d7379-2b2d-4422-8270-433b30ad4250&autoAuth=true&ctid=244b9fec-77ca-43d3-95be-ccaf22063455" allowFullScreen="true"></iframe>  
+</body>  
+</html>  
+"""  
+
+# نمایش HTML در Google Colab  
+display(HTML(html_code))  
